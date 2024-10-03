@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DylaNET</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/themes/smoothness/jquery-ui.css" integrity="sha384-AUxBc4TYOEuk4Hp24650vW1R1zXkuFE8IK5cgdi5qyXRKuc1Xx2ndBiefujL0Qho" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js" integrity="sha384-8EM386r8XMMzwGPUxfGNr6c1wIOYnPQBJ6VFxzKCZeklpQarHoZGB40kdNDA3gYr" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "style.css">
 </head>
-
 <body>
-    <script type="text/javascript" src="./script.js"></script>
+    <div id = "logo-back">
+        <header id = "SearchName" onclick = "changeBack()">
+            <h1>DylaNET</h1>
+        </header>
+        <input type = "text" id = "query">
+        <div id = "button-container">
+            <button class = "buttons ui-button ui-widget ui-corner-all" onclick = "apiSearch()">SEARCH</button>
+            <button id = "timeButton" class = "buttons ui-button ui-widget ui-corner-all">TIME</button>
+            <button id = "Lucky" class = "buttons ui-button ui-widget ui-corner-all">I'm Feeling Lucky</button>
+        </div>
+        <div id = "searchResults"></div>
+        <div id = "Time" title = "Current Time">
+            <p id = "currentTime"></p>
+        </div>
+    </div>
+    <script src = "script.js"></script>
 </body>
-
 </html>

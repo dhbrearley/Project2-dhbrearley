@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./webb-dark.png');
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+}
+
+#logo-back {
+    background-color: rgb(68, 67, 67);
+    width: 80%;
+    max-width: 700px;
+    padding: 50px 0;
+    border-radius: 30px;
+    border: 2px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#SearchName {
+    color: #A0A0A0;
+    font-size: 25px;
+    font-family: "Red Hat Display", 'Courier New', Courier, monospace;
+    margin: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#query {
+    width: 60%;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: transparent;
+    outline: none;
+    font-family: "Red Hat Display", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+#query:focus {
+    box-shadow: 0 0 10px #A0A0A0;
+    border-color: black;
+}
+
+#button-container {
+    margin-top: 30px;
+}
+
+.buttons {
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Red Hat Display",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.searchResults {
+    display: none;
+}
+
+.Time {
+    display: none;
+}
